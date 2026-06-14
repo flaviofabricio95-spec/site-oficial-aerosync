@@ -34,7 +34,7 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
       <nav className="max-w-7xl mx-auto w-full px-6 md:px-8 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo.url} alt="AeroSync Consultoria" className="h-16 md:h-20 w-auto" />
+            <img src={logo.url} alt="AeroSync Consultoria" className="h-24 md:h-32 w-auto" />
           </Link>
 
           <ul className="hidden md:flex items-center gap-1">
