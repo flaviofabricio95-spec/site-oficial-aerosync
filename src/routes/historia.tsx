@@ -30,12 +30,6 @@ const TIMELINE = [
     heading: "Ampliação dos Serviços",
     text: "Incorporamos consultoria SGSO e auditorias internas, atendendo todo o ecossistema: táxi aéreo, manutenção e instrução.",
   },
-  {
-    icon: "◈",
-    year: "Hoje",
-    heading: "Referência Nacional",
-    text: "Mais de 150 clientes em todo o Brasil, com 100% de aprovação nas certificações junto à ANAC. Seu sucesso é nossa missão.",
-  },
 ];
 
 const VALUES = [
@@ -71,10 +65,10 @@ function Historia() {
               Nossa Trajetória
             </span>
             <h1
-              className="font-extrabold leading-tight mb-4"
+              className="font-extrabold leading-tight mb-4 uppercase"
               style={{ fontFamily: "'Playfair Display', serif", color: "#1E3A5F", fontSize: "clamp(2rem,4vw,2.8rem)" }}
             >
-              Uma história construída sobre <em className="not-italic" style={{ color: "#E8621A" }}>excelência</em>
+              Uma história construída sobre <em className="not-italic" style={{ color: "#E8621A" }}>EXCELÊNCIA</em>
             </h1>
             <div className="w-16 h-[3px] rounded mb-6" style={{ background: "#E8621A" }} />
             <p className="text-base leading-relaxed mb-8" style={{ color: "#6B7A90" }}>
