@@ -43,15 +43,15 @@ function Home() {
               <h1
                 className="font-normal uppercase mx-auto mb-8"
                 style={{
-                  fontSize: "clamp(1.75rem,5vw,3.5rem)",
+                  fontSize: "clamp(1.5rem,4.4vw,3rem)",
                   color: "#202A36",
                   letterSpacing: "-0.02em",
-                  lineHeight: 1.1,
-                  maxWidth: "18ch",
+                  lineHeight: 1.15,
                 }}
               >
-                Sua operação aérea em conformidade{" "}
-                <span style={{ color: "#E8621A" }}>TOTAL</span>
+                Sua operação aérea
+                <br />
+                em conformidade <span style={{ color: "#E8621A" }}>TOTAL</span>
               </h1>
 
               <div className="flex gap-3.5 justify-center flex-wrap">
