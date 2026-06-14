@@ -37,8 +37,8 @@ function Home() {
           <Navbar variant="hero" />
           <div className="flex-1 flex items-center justify-center px-6 -mt-20">
             <div className="text-center">
-              <p className="text-xs font-semibold tracking-[0.12em] uppercase mb-4" style={{ color: "#4B5563" }}>
-                Consultoria Aeronáutica
+              <p className="text-xs font-semibold tracking-[0.12em] uppercase mb-4 whitespace-pre-line" style={{ color: "#4B5563" }}>
+                AEROSYNC{"\n"}CONSULTORIA AERONÁUTICA
               </p>
               <h1 className="leading-none">
                 <span
@@ -67,7 +67,7 @@ function Home() {
                 className="mt-5 mb-7 mx-auto leading-relaxed"
                 style={{ color: "#4B5563", maxWidth: "560px", fontSize: "clamp(1rem,2.5vw,1.2rem)" }}
               >
-                Sua operação aérea em conformidade total com a ANAC. Certificações, auditorias e SGSO com precisão e segurança.
+                Sua operação aérea em conformidade TOTAL
               </p>
               <div className="flex gap-3.5 justify-center flex-wrap">
                 <Link

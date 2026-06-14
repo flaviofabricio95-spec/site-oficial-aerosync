@@ -8,8 +8,7 @@ export function Footer() {
         <div>
           <img src={logo.url} alt="AeroSync" className="h-10 mb-4" />
           <p className="text-sm leading-relaxed max-w-[260px]">
-            Consultoria aeronáutica especializada em conformidade ANAC. Seu parceiro estratégico para
-            certificações, auditorias e segurança operacional.
+            Seu parceiro estratégico para certificações, auditorias e segurança operacional.
           </p>
         </div>
         <div>
