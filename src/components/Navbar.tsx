@@ -23,11 +23,11 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
     : "sticky top-0 z-50 border-b";
   const wrapperStyle = isHero
     ? undefined
-    : { background: "rgba(30,58,95,0.97)", borderColor: "rgba(255,255,255,0.08)", backdropFilter: "blur(12px)" };
+    : { background: "rgba(255,255,255,0.95)", borderColor: "rgba(30,58,95,0.08)", backdropFilter: "blur(12px)" };
 
   const linkBase = isHero
     ? "text-gray-900 hover:text-gray-700"
-    : "text-white/80 hover:text-white hover:bg-white/10";
+    : "text-[#1E3A5F] hover:text-[#E8621A]";
 
   return (
     <header className={wrapperClass} style={wrapperStyle}>
@@ -46,7 +46,7 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
                   activeProps={{
                     className: isHero
                       ? "text-sm font-semibold px-3.5 py-2 rounded-md text-gray-900"
-                      : "text-sm font-medium px-3.5 py-2 rounded-md text-white bg-white/10",
+                      : "text-sm font-semibold px-3.5 py-2 rounded-md text-[#E8621A]",
                   }}
                   activeOptions={{ exact: true }}
                 >
@@ -68,7 +68,7 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
 
           <button
             onClick={() => setOpen((v) => !v)}
-            className={`md:hidden ${isHero ? "text-gray-900" : "text-white"}`}
+            className={`md:hidden ${isHero ? "text-gray-900" : "text-[#1E3A5F]"}`}
             aria-label="Menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
