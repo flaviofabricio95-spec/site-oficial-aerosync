@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/aerosync-logo-v2.png.asset.json";
 
 const NAV_ITEMS = [
-  { label: "Início", to: "/" },
-  { label: "História", to: "/historia" },
-  { label: "Serviços", to: "/servicos" },
-  { label: "Contato", to: "/contato" },
+  { label: "INÍCIO", to: "/" },
+  { label: "HISTÓRIA", to: "/historia" },
+  { label: "SERVIÇOS", to: "/servicos" },
+  { label: "CONTATO", to: "/contato" },
 ] as const;
 
 type NavbarProps = {
