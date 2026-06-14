@@ -35,7 +35,7 @@ function Home() {
 
         <div className="relative z-10 h-full flex flex-col">
           <Navbar variant="hero" />
-          <div className="flex-1 flex items-start justify-center px-6 pt-8 md:pt-12">
+          <div className="flex-1 flex items-start justify-center px-6 pt-32 md:pt-40">
             <div className="text-center">
               <p className="font-semibold tracking-[0.18em] uppercase mb-6 whitespace-pre-line" style={{ color: "#202A36", fontSize: "clamp(1rem,2.4vw,1.6rem)", lineHeight: 1.15 }}>
                 AEROSYNC{"\n"}CONSULTORIA AERONÁUTICA
