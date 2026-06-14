@@ -23,11 +23,11 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
     : "sticky top-0 z-50 border-b";
   const wrapperStyle = isHero
     ? undefined
-    : { background: "rgba(30,58,95,0.97)", borderColor: "rgba(255,255,255,0.08)", backdropFilter: "blur(12px)" };
+    : { background: "rgba(255,255,255,0.95)", borderColor: "rgba(30,58,95,0.08)", backdropFilter: "blur(12px)" };
 
   const linkBase = isHero
     ? "text-gray-900 hover:text-gray-700"
-    : "text-white/80 hover:text-white hover:bg-white/10";
+    : "text-[#1E3A5F] hover:text-[#E8621A]";
 
   return (
     <header className={wrapperClass} style={wrapperStyle}>
@@ -46,7 +46,7 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
                   activeProps={{
                     className: isHero
                       ? "text-sm font-semibold px-3.5 py-2 rounded-md text-gray-900"
-                      : "text-sm font-medium px-3.5 py-2 rounded-md text-white bg-white/10",
+                      : "text-sm font-semibold px-3.5 py-2 rounded-md text-[#E8621A]",
                   }}
                   activeOptions={{ exact: true }}
                 >
@@ -68,7 +68,7 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
 
           <button
             onClick={() => setOpen((v) => !v)}
-            className={`md:hidden ${isHero ? "text-gray-900" : "text-white"}`}
+            className={`md:hidden ${isHero ? "text-gray-900" : "text-[#1E3A5F]"}`}
             aria-label="Menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -78,20 +78,14 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
         {open && (
           <div
             className="md:hidden mt-3 rounded-2xl p-3 shadow-xl"
-            style={
-              isHero
-                ? { background: "rgba(255,255,255,0.95)", backdropFilter: "blur(12px)" }
-                : { background: "#142B48" }
-            }
+            style={{ background: "rgba(255,255,255,0.97)", backdropFilter: "blur(12px)" }}
           >
             <ul className="flex flex-col gap-1">
               {NAV_ITEMS.map((item) => (
                 <li key={item.to}>
                   <Link
                     to={item.to}
-                    className={`block px-4 py-3 rounded-lg text-sm font-medium ${
-                      isHero ? "text-gray-900 hover:bg-gray-100" : "text-white/85 hover:bg-white/10 hover:text-white"
-                    }`}
+                    className="block px-4 py-3 rounded-lg text-sm font-medium text-[#1E3A5F] hover:bg-[#F8F9FB] hover:text-[#E8621A]"
                     onClick={() => setOpen(false)}
                   >
                     {item.label}
