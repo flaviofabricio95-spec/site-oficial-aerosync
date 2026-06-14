@@ -78,20 +78,14 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
         {open && (
           <div
             className="md:hidden mt-3 rounded-2xl p-3 shadow-xl"
-            style={
-              isHero
-                ? { background: "rgba(255,255,255,0.95)", backdropFilter: "blur(12px)" }
-                : { background: "#142B48" }
-            }
+            style={{ background: "rgba(255,255,255,0.97)", backdropFilter: "blur(12px)" }}
           >
             <ul className="flex flex-col gap-1">
               {NAV_ITEMS.map((item) => (
                 <li key={item.to}>
                   <Link
                     to={item.to}
-                    className={`block px-4 py-3 rounded-lg text-sm font-medium ${
-                      isHero ? "text-gray-900 hover:bg-gray-100" : "text-white/85 hover:bg-white/10 hover:text-white"
-                    }`}
+                    className="block px-4 py-3 rounded-lg text-sm font-medium text-[#1E3A5F] hover:bg-[#F8F9FB] hover:text-[#E8621A]"
                     onClick={() => setOpen(false)}
                   >
                     {item.label}
