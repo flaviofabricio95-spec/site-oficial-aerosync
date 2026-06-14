@@ -39,10 +39,10 @@ function Contato() {
               Fale Conosco
             </span>
             <h1
-              className="font-extrabold leading-tight mb-4"
+              className="font-extrabold leading-tight mb-4 uppercase"
               style={{ fontFamily: "'Playfair Display', serif", color: "#1E3A5F", fontSize: "clamp(2rem,4vw,2.8rem)" }}
             >
-              Vamos iniciar sua <em className="not-italic" style={{ color: "#E8621A" }}>jornada regulatória</em>
+              VAMOS INICIAR SUA&nbsp;<em className="not-italic" style={{ color: "#E8621A" }}>JORNADA REGULATÓRIA ?</em>
             </h1>
             <p className="text-base leading-relaxed max-w-[600px]" style={{ color: "#6B7A90" }}>
               Entre em contato. Respondemos em até 24h úteis com uma análise preliminar do seu projeto.
