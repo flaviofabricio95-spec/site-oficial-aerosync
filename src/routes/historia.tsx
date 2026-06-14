@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import logo from "@/assets/aerosync-logo.png.asset.json";
+import logo from "@/assets/aerosync-logo-v2.png.asset.json";
 
 export const Route = createFileRoute("/historia")({
   head: () => ({
@@ -58,7 +58,7 @@ function Historia() {
               className="absolute -top-10 -right-10 w-44 h-44 rounded-full"
               style={{ background: "rgba(232,98,26,0.15)" }}
             />
-            <img src={logo.url} alt="AeroSync" className="w-40 relative z-10" />
+            <img src={logo.url} alt="AeroSync" className="w-64 relative z-10" />
             <p className="text-white/70 text-sm italic text-center mt-5 relative z-10 whitespace-pre-line">
               "Voar com segurança começa{"\n"}com regulamentação de excelência."
             </p>

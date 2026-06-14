@@ -40,35 +40,18 @@ function Home() {
               <p className="text-xs font-semibold tracking-[0.12em] uppercase mb-4 whitespace-pre-line" style={{ color: "#4B5563" }}>
                 AEROSYNC{"\n"}CONSULTORIA AERONÁUTICA
               </p>
-              <h1 className="leading-none">
-                <span
-                  className="block font-normal"
-                  style={{
-                    fontSize: "clamp(3.5rem,9vw,6rem)",
-                    color: "#6B7280",
-                    letterSpacing: "-0.04em",
-                  }}
-                >
-                  Expertise.
-                </span>
-                <span
-                  className="block font-normal"
-                  style={{
-                    fontSize: "clamp(3.5rem,9vw,6rem)",
-                    color: "#202A36",
-                    letterSpacing: "-0.04em",
-                    marginTop: "-10px",
-                  }}
-                >
-                  Resultados.
-                </span>
-              </h1>
-              <p
-                className="mt-5 mb-7 mx-auto leading-relaxed"
-                style={{ color: "#4B5563", maxWidth: "560px", fontSize: "clamp(1rem,2.5vw,1.2rem)" }}
+              <h1
+                className="font-normal uppercase leading-[0.95]"
+                style={{
+                  fontSize: "clamp(2.75rem,8vw,5.5rem)",
+                  color: "#202A36",
+                  letterSpacing: "-0.03em",
+                }}
               >
-                Sua operação aérea em conformidade TOTAL
-              </p>
+                Sua operação aérea em conformidade{" "}
+                <span style={{ color: "#E8621A" }}>TOTAL</span>
+              </h1>
+
               <div className="flex gap-3.5 justify-center flex-wrap">
                 <Link
                   to="/servicos"
