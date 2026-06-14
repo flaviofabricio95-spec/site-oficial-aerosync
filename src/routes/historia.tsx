@@ -59,10 +59,8 @@ function Historia() {
               style={{ background: "rgba(232,98,26,0.15)" }}
             />
             <img src={logo.url} alt="AeroSync" className="w-40 relative z-10" />
-            <p className="text-white/70 text-sm italic text-center mt-5 relative z-10">
-              "Voar com segurança começa em terra,
-              <br />
-              com regulamentação de excelência."
+            <p className="text-white/70 text-sm italic text-center mt-5 relative z-10 whitespace-pre-line">
+              "Voar com segurança começa{"\n"}com regulamentação de excelência."
             </p>
           </div>
           <div>
