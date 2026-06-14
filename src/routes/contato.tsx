@@ -1,108 +1,166 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
       { title: "Contato — AeroSync Consultoria" },
-      { name: "description", content: "Entre em contato com a AeroSync Consultoria." },
+      { name: "description", content: "Fale com a AeroSync. Análise preliminar do seu projeto em até 24h úteis." },
       { property: "og:title", content: "Contato — AeroSync Consultoria" },
-      { property: "og:description", content: "Entre em contato com a AeroSync Consultoria." },
+      { property: "og:description", content: "Vamos iniciar sua jornada regulatória." },
     ],
     links: [{ rel: "canonical", href: "/contato" }],
   }),
   component: Contato,
 });
 
+const INFO = [
+  { icon: "📧", label: "E-mail", value: "aerosync.consultoria@gmail.com" },
+  { icon: "📱", label: "WhatsApp / Telefone", value: "+55 (11) 95951-2487\n+55 (74) 99948-1092" },
+  { icon: "📍", label: "Localização", value: "São Paulo – SP (Atendimento Nacional)" },
+  { icon: "🕐", label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
+];
+
 function Contato() {
   const [sent, setSent] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col" style={{ fontFamily: "'Inter', sans-serif" }}>
+    <div className="min-h-screen flex flex-col" style={{ fontFamily: "'Inter', sans-serif", background: "#F8F9FB" }}>
       <Navbar />
-      <main className="flex-1 max-w-6xl mx-auto w-full px-6 md:px-8 py-20">
-        <p className="text-sm font-semibold text-gray-600 tracking-wider mb-4 uppercase">Contato</p>
-        <h1 className="text-4xl md:text-6xl font-normal tracking-tighter mb-12" style={{ color: "#202A36" }}>
-          Vamos conversar.
-        </h1>
-
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <Mail className="text-gray-700 mt-1" size={20} />
-              <div>
-                <p className="font-semibold text-gray-900">Email</p>
-                <p className="text-gray-600">aerosync.consultoria@gmail.com</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Phone className="text-gray-700 mt-1" size={20} />
-              <div>
-                <p className="font-semibold text-gray-900">Telefone</p>
-                <p className="text-gray-600">
-                  +55 (11) 95951-2487
-                  <br />
-                  +55 (74) 99948-1092
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <MapPin className="text-gray-700 mt-1" size={20} />
-              <div>
-                <p className="font-semibold text-gray-900">Endereço</p>
-                <p className="text-gray-600">São Paulo, Brasil</p>
-              </div>
-            </div>
+      <main className="flex-1 py-24 px-[5%]">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="mb-14">
+            <span
+              className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+              style={{ background: "rgba(232,98,26,0.08)", border: "1px solid rgba(232,98,26,0.2)", color: "#E8621A" }}
+            >
+              Fale Conosco
+            </span>
+            <h1
+              className="font-extrabold leading-tight mb-4"
+              style={{ fontFamily: "'Playfair Display', serif", color: "#1E3A5F", fontSize: "clamp(2rem,4vw,2.8rem)" }}
+            >
+              Vamos iniciar sua <em className="not-italic" style={{ color: "#E8621A" }}>jornada regulatória</em>
+            </h1>
+            <p className="text-base leading-relaxed max-w-[600px]" style={{ color: "#6B7A90" }}>
+              Entre em contato. Respondemos em até 24h úteis com uma análise preliminar do seu projeto.
+            </p>
           </div>
 
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSent(true);
-            }}
-            className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 space-y-4"
-          >
+          <div className="grid lg:grid-cols-[1fr_1.4fr] gap-16 items-start">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Nome</label>
-              <input
-                required
-                type="text"
-                className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
-              />
+              {INFO.map((item) => (
+                <div key={item.label} className="flex gap-4 items-start mb-7">
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 text-base"
+                    style={{ background: "#1E3A5F" }}
+                  >
+                    {item.icon}
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#E8621A" }}>
+                      {item.label}
+                    </div>
+                    <div className="text-sm font-medium whitespace-pre-line" style={{ color: "#3A4A5C" }}>
+                      {item.value}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div
+                className="rounded-2xl px-6 py-5 mt-8 flex items-center gap-3.5"
+                style={{ background: "rgba(30,58,95,0.06)", border: "1px solid rgba(30,58,95,0.15)" }}
+              >
+                <div className="text-3xl">✈</div>
+                <div>
+                  <strong className="block text-sm font-bold" style={{ color: "#1E3A5F" }}>
+                    Especialistas Certificados ANAC
+                  </strong>
+                  <span className="text-xs" style={{ color: "#6B7A90" }}>
+                    Consultores com formação e registro junto à autoridade aeronáutica brasileira.
+                  </span>
+                </div>
+              </div>
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-              <input
-                required
-                type="email"
-                className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
-              <textarea
-                required
-                rows={4}
-                className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full px-4 py-2 rounded-full text-white font-medium transition-colors"
-              style={{ backgroundColor: "#202A36" }}
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                setSent(true);
+              }}
+              className="bg-white rounded-3xl p-10 shadow-[0_4px_32px_rgba(30,58,95,0.08)]"
             >
-              Enviar mensagem
-            </button>
-            {sent && (
-              <p className="text-sm text-green-700">Obrigado! Em breve entraremos em contato.</p>
-            )}
-          </form>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Field label="Nome Completo *">
+                  <input required type="text" placeholder="Seu nome" className={inputClass} />
+                </Field>
+                <Field label="Empresa / Organização">
+                  <input type="text" placeholder="Nome da empresa" className={inputClass} />
+                </Field>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Field label="E-mail *">
+                  <input required type="email" placeholder="seu@email.com" className={inputClass} />
+                </Field>
+                <Field label="Telefone / WhatsApp">
+                  <input type="tel" placeholder="(00) 00000-0000" className={inputClass} />
+                </Field>
+              </div>
+              <Field label="Serviço de Interesse">
+                <select className={inputClass} defaultValue="">
+                  <option value="">Selecione um serviço…</option>
+                  <option>Certificação de Táxi Aéreo (RBAC 135)</option>
+                  <option>Oficina de Manutenção (Parte 145)</option>
+                  <option>Centro de Instrução (RBAC 141)</option>
+                  <option>Auditoria Interna / Externa</option>
+                  <option>Consultoria SGSO / SMS</option>
+                  <option>Assessoria Regulatória Geral</option>
+                  <option>Outro</option>
+                </select>
+              </Field>
+              <Field label="Mensagem">
+                <textarea
+                  required
+                  placeholder="Descreva sua necessidade ou situação atual. Quanto mais detalhe, melhor podemos ajudá-lo."
+                  className={`${inputClass} min-h-[120px] resize-y`}
+                />
+              </Field>
+              <button
+                type="submit"
+                className="w-full text-white font-bold text-base py-4 rounded-xl transition-all hover:-translate-y-0.5"
+                style={{ background: "#E8621A" }}
+              >
+                Enviar Mensagem ✈
+              </button>
+              {sent && (
+                <p className="text-sm text-green-700 mt-4">Obrigado! Em breve entraremos em contato.</p>
+              )}
+            </form>
+          </div>
         </div>
       </main>
       <Footer />
+    </div>
+  );
+}
+
+const inputClass =
+  "w-full px-4 py-3 rounded-xl text-sm outline-none transition-all focus:bg-white focus:shadow-[0_0_0_3px_rgba(30,58,95,0.08)]";
+
+function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="mb-5">
+      <label className="block text-xs font-semibold mb-2" style={{ color: "#1E3A5F" }}>
+        {label}
+      </label>
+      <div
+        className="rounded-xl"
+        style={{ border: "1px solid #D9E0EA", background: "#F8F9FB" }}
+      >
+        {children}
+      </div>
     </div>
   );
 }
