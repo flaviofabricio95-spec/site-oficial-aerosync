@@ -69,20 +69,6 @@ function Contato() {
                   </div>
                 </div>
               ))}
-              <div
-                className="rounded-2xl px-6 py-5 mt-8 flex items-center gap-3.5"
-                style={{ background: "rgba(30,58,95,0.06)", border: "1px solid rgba(30,58,95,0.15)" }}
-              >
-                <div className="text-3xl">✈</div>
-                <div>
-                  <strong className="block text-sm font-bold" style={{ color: "#1E3A5F" }}>
-                    Especialistas Certificados ANAC
-                  </strong>
-                  <span className="text-xs" style={{ color: "#6B7A90" }}>
-                    Consultores com formação e registro junto à autoridade aeronáutica brasileira.
-                  </span>
-                </div>
-              </div>
             </div>
 
             <form
