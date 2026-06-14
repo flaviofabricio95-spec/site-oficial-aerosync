@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/aerosync-logo.png.asset.json";
+import logo from "@/assets/aerosync-logo-v2.png.asset.json";
 
 export function Footer() {
   return (
     <footer style={{ background: "#142B48", color: "rgba(255,255,255,0.65)" }} className="px-[5%] pt-14 pb-8">
       <div className="max-w-[1200px] mx-auto grid gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
-          <img src={logo.url} alt="AeroSync" className="h-10 mb-4" />
+          <img src={logo.url} alt="AeroSync" className="h-20 mb-4" />
           <p className="text-sm leading-relaxed max-w-[260px]">
             Seu parceiro estratégico para certificações, auditorias e segurança operacional.
           </p>
