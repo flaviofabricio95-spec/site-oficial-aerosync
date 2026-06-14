@@ -35,14 +35,18 @@ function Contato() {
               <Mail className="text-gray-700 mt-1" size={20} />
               <div>
                 <p className="font-semibold text-gray-900">Email</p>
-                <p className="text-gray-600">contato@aerosync.com.br</p>
+                <p className="text-gray-600">aerosync.consultoria@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="text-gray-700 mt-1" size={20} />
               <div>
                 <p className="font-semibold text-gray-900">Telefone</p>
-                <p className="text-gray-600">+55 (11) 99999-0000</p>
+                <p className="text-gray-600">
+                  +55 (11) 95951-2487
+                  <br />
+                  +55 (74) 99948-1092
+                </p>
               </div>
             </div>
             <div className="flex items-start gap-4">
