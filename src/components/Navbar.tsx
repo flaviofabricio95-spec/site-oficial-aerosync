@@ -32,12 +32,12 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
   return (
     <header className={wrapperClass} style={wrapperStyle}>
       <nav className="max-w-7xl mx-auto w-full px-6 md:px-8 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-end justify-between gap-4">
           <Link to="/" className="flex items-center gap-3">
             <img src={logo.url} alt="AeroSync Consultoria" className="h-24 md:h-32 w-auto" />
           </Link>
 
-          <ul className="hidden md:flex items-center gap-1">
+          <ul className="hidden md:flex items-center gap-1 pb-3">
             {NAV_ITEMS.map((item) => (
               <li key={item.to}>
                 <Link
@@ -68,7 +68,7 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
 
           <button
             onClick={() => setOpen((v) => !v)}
-            className={`md:hidden ${isHero ? "text-gray-900" : "text-white"}`}
+            className={`md:hidden mb-3 ${isHero ? "text-gray-900" : "text-white"}`}
             aria-label="Menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
