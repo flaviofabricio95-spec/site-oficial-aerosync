@@ -21,7 +21,7 @@ const TIMELINE = [
     icon: "✦",
     year: "Fundação",
     heading: "Nasce a AeroSync",
-    text: "Fundada por especialistas com décadas de experiência em aviação civil brasileira, com missão de simplificar o processo regulatório aeronáutico.",
+    text: "Fundada por especialistas com a missão de simplificar o processo regulatório aeronáutico.",
     accent: true,
   },
   {
@@ -68,7 +68,7 @@ function Historia() {
               className="font-extrabold leading-tight mb-4 uppercase"
               style={{ fontFamily: "'Playfair Display', serif", color: "#1E3A5F", fontSize: "clamp(2rem,4vw,2.8rem)" }}
             >
-              Uma história construída sobre <em className="not-italic" style={{ color: "#E8621A" }}>EXCELÊNCIA</em>
+              UMA HISTÓRIA CONSTRUÍDA SOBRE&nbsp;<em className="not-italic" style={{ color: "#E8621A" }}>EXCELÊNCIA</em>
             </h1>
             <div className="w-16 h-[3px] rounded mb-6" style={{ background: "#E8621A" }} />
             <p className="text-base leading-relaxed mb-8" style={{ color: "#6B7A90" }}>
