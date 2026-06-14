@@ -19,7 +19,7 @@ export const Route = createFileRoute("/contato")({
 const INFO = [
   { icon: "📧", label: "E-mail", value: "aerosync.consultoria@gmail.com" },
   { icon: "📱", label: "WhatsApp / Telefone", value: "+55 (11) 95951-2487\n+55 (74) 99948-1092" },
-  { icon: "📍", label: "Localização", value: "São Paulo – SP (Atendimento Nacional)" },
+  { icon: "📍", label: "Localização", value: "São Paulo – SP" },
   { icon: "🕐", label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
 ];
 
