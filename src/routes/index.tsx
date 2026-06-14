@@ -41,11 +41,13 @@ function Home() {
                 AEROSYNC{"\n"}CONSULTORIA AERONÁUTICA
               </p>
               <h1
-                className="font-normal uppercase leading-[0.95]"
+                className="font-normal uppercase mx-auto mb-8"
                 style={{
-                  fontSize: "clamp(2.75rem,8vw,5.5rem)",
+                  fontSize: "clamp(1.75rem,5vw,3.5rem)",
                   color: "#202A36",
-                  letterSpacing: "-0.03em",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.1,
+                  maxWidth: "18ch",
                 }}
               >
                 Sua operação aérea em conformidade{" "}
