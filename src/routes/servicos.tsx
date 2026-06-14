@@ -25,26 +25,26 @@ const SERVICES = [
   {
     icon: "🔧",
     name: "Oficinas de Manutenção Aeronáutica (Parte 145)",
-    desc: "Consultoria para homologação e renovação de Organizações de Manutenção. Estruturação de SGQ, elaboração de MOE, procedimentos técnicos e adequação à Parte 145.",
+    desc: "Consultoria para homologação e renovação de Organizações de Manutenção. Estruturação de SGQ, elaboração de manuais, procedimentos técnicos e adequação à Parte 145.",
     tag: "RBAC 145",
   },
   {
     icon: "🎓",
     name: "Centros de Instrução de Aviação Civil",
-    desc: "Apoio na certificação e operação de escolas de aviação conforme RBAC 141. Elaboração de programas de instrução, manuais operacionais e adequação curricular.",
+    desc: "Apoio na certificação e operation de escolas de aviação conforme RBAC 141. Elaboração de programas de instrução, manuais operacionais e adequação curricular.",
     tag: "RBAC 141",
   },
   {
     icon: "📋",
-    name: "Auditorias Internas e Externas",
+    name: "Auditorias",
     desc: "Realização de auditorias de conformidade regulatória, identificando não conformidades e oportunidades de melhoria. Preparação para inspeções da ANAC.",
     tag: "Compliance",
   },
   {
     icon: "🛡️",
-    name: "Consultoria SGSO / SMS — Conformidade ANAC",
-    desc: "Implementação e fortalecimento do Sistema de Gerenciamento da Segurança Operacional. Cultura de segurança, relatórios de ocorrências e análise de risco conforme RBAC 120.",
-    tag: "SGSO · SMS",
+    name: "Consultoria SGSO — Conformidade ANAC",
+    desc: "Implementação e fortalecimento do Sistema de Gerenciamento da Segurança Operacional. Cultura de segurança, relatórios de ocorrências e análise de risco conforme RBAC.",
+    tag: "SGSO",
   },
   {
     icon: "📐",
@@ -68,7 +68,7 @@ function Servicos() {
               O que fazemos
             </span>
             <h1
-              className="font-extrabold leading-tight mb-4"
+              className="font-extrabold leading-tight mb-4 uppercase"
               style={{ fontFamily: "'Playfair Display', serif", color: "#1E3A5F", fontSize: "clamp(2rem,4vw,2.8rem)" }}
             >
               Soluções completas para sua{" "}
@@ -115,10 +115,10 @@ function Servicos() {
           >
             <div>
               <h3
-                className="text-white font-extrabold leading-tight max-w-[480px]"
+                className="text-white font-extrabold leading-tight max-w-[480px] uppercase"
                 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.8rem" }}
               >
-                Precisa de uma solução sob medida para sua operação?
+                PRECISA DE UMA SOLUÇÃO SOB MEDIDA PARA SUA OPERAÇÃO?
               </h3>
               <p className="text-white/65 text-sm mt-2">
                 Nossa equipe analisa seu contexto e desenvolve um plano de ação personalizado.
@@ -129,7 +129,7 @@ function Servicos() {
               className="text-white font-bold text-sm px-7 py-3.5 rounded-xl inline-flex items-center gap-2 transition-all hover:-translate-y-0.5"
               style={{ background: "#E8621A" }}
             >
-              Solicitar Diagnóstico Gratuito →
+              Solicitar Diagnóstico →
             </Link>
           </div>
         </div>

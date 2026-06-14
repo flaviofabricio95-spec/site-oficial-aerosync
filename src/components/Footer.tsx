@@ -14,10 +14,10 @@ export function Footer() {
         <div>
           <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Navegação</h4>
           <ul className="flex flex-col gap-2.5 text-sm">
-            <li><Link to="/" className="hover:text-[#F5A623] transition-colors">Início</Link></li>
-            <li><Link to="/historia" className="hover:text-[#F5A623] transition-colors">Nossa História</Link></li>
-            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Serviços</Link></li>
-            <li><Link to="/contato" className="hover:text-[#F5A623] transition-colors">Contato</Link></li>
+            <li><Link to="/" className="hover:text-[#F5A623] transition-colors">INÍCIO</Link></li>
+            <li><Link to="/historia" className="hover:text-[#F5A623] transition-colors">HISTÓRIA</Link></li>
+            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">SERVIÇOS</Link></li>
+            <li><Link to="/contato" className="hover:text-[#F5A623] transition-colors">CONTATO</Link></li>
           </ul>
         </div>
         <div>
@@ -26,7 +26,7 @@ export function Footer() {
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Táxi Aéreo (RBAC 135)</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Manutenção (Parte 145)</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Instrução (RBAC 141)</Link></li>
-            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">SGSO / SMS</Link></li>
+            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">SGSO</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Auditorias</Link></li>
           </ul>
         </div>
@@ -36,7 +36,7 @@ export function Footer() {
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 135</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 141</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 145</Link></li>
-            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 120 (SGSO)</Link></li>
+            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC (SGSO)</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Normativos ANAC</Link></li>
           </ul>
         </div>
