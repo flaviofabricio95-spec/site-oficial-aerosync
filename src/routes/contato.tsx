@@ -115,7 +115,7 @@ function Contato() {
                   <option>Oficina de Manutenção (Parte 145)</option>
                   <option>Centro de Instrução (RBAC 141)</option>
                   <option>Auditoria Interna / Externa</option>
-                  <option>Consultoria SGSO / SMS</option>
+                  <option>Consultoria SGSO</option>
                   <option>Assessoria Regulatória Geral</option>
                   <option>Outro</option>
                 </select>
