@@ -34,7 +34,7 @@ export function Footer() {
           <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Regulações</h4>
           <ul className="flex flex-col gap-2.5 text-sm">
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 135</Link></li>
-            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 141</Link></li>
+            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 141*</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 145</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 133</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 91</Link></li>
