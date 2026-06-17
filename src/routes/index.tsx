@@ -21,7 +21,6 @@ function Home() {
       <section className="relative h-screen overflow-hidden" style={{ background: "#f9fafb" }}>
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          style={{ filter: "saturate(0.4) hue-rotate(-15deg)" }}
           autoPlay
           muted
           loop
