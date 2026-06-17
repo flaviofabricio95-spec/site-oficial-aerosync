@@ -18,6 +18,20 @@ export function Footer() {
           <p className="text-sm leading-relaxed max-w-[260px]">
             Seu parceiro estratégico para certificações, auditorias e segurança operacional.
           </p>
+          <div className="flex gap-3 mt-5">
+            {SOCIALS.map(({ label, href, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white/10 hover:bg-[#E8621A] text-white transition-colors"
+              >
+                <Icon size={18} />
+              </a>
+            ))}
+          </div>
         </div>
         <div>
           <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Navegação</h4>
