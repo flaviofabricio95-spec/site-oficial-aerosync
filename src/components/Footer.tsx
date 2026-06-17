@@ -26,7 +26,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white/10 hover:bg-[#E8621A] text-white transition-colors"
+                className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#E8621A] hover:bg-[#F5A623] text-white transition-colors shadow-md"
               >
                 <Icon size={18} />
               </a>
