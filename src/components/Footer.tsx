@@ -28,6 +28,7 @@ export function Footer() {
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Instrução (RBAC 141)</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">SGSO</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Auditorias</Link></li>
+            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Treinamentos</Link></li>
           </ul>
         </div>
         <div>
