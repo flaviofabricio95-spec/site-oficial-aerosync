@@ -45,14 +45,18 @@ function Historia() {
       <main className="flex-1 py-24 px-[5%]">
         <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-20 items-center">
           <div
-            className="rounded-3xl p-12 flex flex-col items-center justify-center relative overflow-hidden min-h-[400px]"
-            style={{ background: "linear-gradient(135deg,#E8621A 0%,#F5A623 100%)" }}
+            className="rounded-3xl p-12 flex flex-col items-center justify-center relative overflow-hidden min-h-[400px] shadow-2xl"
+            style={{ background: "linear-gradient(135deg,#0F2540 0%,#1E3A5F 60%,#2A4F7E 100%)", boxShadow: "0 20px 60px -15px rgba(232,98,26,0.4)" }}
           >
             <div
-              className="absolute -top-10 -right-10 w-44 h-44 rounded-full"
-              style={{ background: "rgba(30,58,95,0.25)" }}
+              className="absolute -top-10 -right-10 w-44 h-44 rounded-full blur-2xl"
+              style={{ background: "rgba(232,98,26,0.45)" }}
             />
-            <img src={logo.url} alt="AeroSync" className="w-64 relative z-10 drop-shadow-lg" />
+            <div
+              className="absolute -bottom-16 -left-16 w-52 h-52 rounded-full blur-3xl"
+              style={{ background: "rgba(245,166,35,0.25)" }}
+            />
+            <img src={logo.url} alt="AeroSync" className="w-64 relative z-10 drop-shadow-[0_4px_20px_rgba(232,98,26,0.5)]" />
             <p className="text-white text-sm italic text-center mt-5 relative z-10 whitespace-pre-line font-medium">
               "Voar com segurança começa{"\n"}com regulamentação de excelência."
             </p>
