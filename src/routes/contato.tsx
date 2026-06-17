@@ -103,6 +103,9 @@ function Contato() {
                   <option>Auditoria Interna / Externa</option>
                   <option>Consultoria SGSO</option>
                   <option>Assessoria Regulatória Geral</option>
+                  <option>RBAC 133</option>
+                  <option>RBAC 91</option>
+                  <option>Treinamentos</option>
                   <option>Outro</option>
                 </select>
               </Field>
