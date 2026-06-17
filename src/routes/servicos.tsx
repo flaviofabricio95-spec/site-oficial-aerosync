@@ -24,7 +24,7 @@ const SERVICES = [
   },
   {
     icon: "🔧",
-    name: "Oficinas de Manutenção Aeronáutica (Parte 145)",
+    name: "Oficinas de Manutenção Aeronáutica (RBAC 145)",
     desc: "Consultoria para homologação e renovação de Organizações de Manutenção. Estruturação de SGQ, elaboração de manuais, procedimentos técnicos e adequação à Parte 145.",
     tag: "RBAC 145",
   },
