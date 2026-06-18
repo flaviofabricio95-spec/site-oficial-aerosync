@@ -30,7 +30,7 @@ const SERVICES = [
   },
   {
     icon: "🎓",
-    name: "OPERADORES PRIVADOS (RBAC 91)",
+    name: "OPERADORES PRIVADOS / SAE\n(RBAC 91)",
     desc: "CRIAR TEXTO",
     tag: "*****\n",
   },
