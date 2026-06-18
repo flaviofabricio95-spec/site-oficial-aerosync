@@ -49,9 +49,9 @@ function Home() {
                   lineHeight: 1.15,
                 }}
               >
-                Sua operação aérea
+                GESTÃO INTELIGENTE PARA
                 <br />
-                em conformidade <span style={{ color: "#E8621A" }}>TOTAL</span>
+                OPERAÇÕES MAIS SEGURAS
               </h1>
 
               <div className="flex gap-3.5 justify-center flex-wrap">
