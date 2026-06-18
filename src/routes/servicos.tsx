@@ -30,7 +30,7 @@ const SERVICES = [
   },
   {
     icon: "🎓",
-    name: "LOA*",
+    name: "OPERADORES PRIVADOS RBAC 91",
     desc: "CRIAR TEXTO",
     tag: "*****\n",
   },
