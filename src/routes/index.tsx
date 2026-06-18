@@ -49,9 +49,7 @@ function Home() {
                   lineHeight: 1.15,
                 }}
               >
-                GESTÃO INTELIGENTE PARA
-                <br />
-                OPERAÇÕES&nbsp;
+                GESTÃO INTELIGENTE PARA OPERAÇÕES&nbsp;
                 <br />
                 <span style={{ color: "#E8621A" }}>MAIS SEGURAS</span>
               </h1>
