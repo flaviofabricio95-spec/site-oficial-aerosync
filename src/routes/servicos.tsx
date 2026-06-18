@@ -48,9 +48,9 @@ const SERVICES = [
   },
   {
     icon: "📐",
-    name: "Assessoria Regulatória RBAC",
-    desc: "Interpretação e aplicação dos Regulamentos Brasileiros de Aviação Civil. Suporte contínuo com as revisões normativas e novas exigências da autoridade aeronáutica.",
-    tag: "REGULAMENTAÇÃO",
+    name: "Treinamentos",
+    desc: "criar texto",
+    tag: "CAPACITAÇÃO",
   },
 ];
 
