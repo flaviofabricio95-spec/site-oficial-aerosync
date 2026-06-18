@@ -18,37 +18,37 @@ export const Route = createFileRoute("/servicos")({
 const SERVICES = [
   {
     icon: "✈️",
-    name: "Certificação de Táxi Aéreo (RBAC 135)",
+    name: "CERTIFICAÇÃO DE TÁXI AÉREO (RBAC 135)",
     desc: "Assessoria completa para obtenção e renovação do COA e Especificações de Operações. Elaboramos Manuais Operacionais, planos de treinamento e toda documentação exigida pela ANAC.",
     tag: "RBAC 135",
   },
   {
     icon: "🔧",
-    name: "Oficinas de Manutenção Aeronáutica (RBAC 145)",
+    name: "OFICINAS DE MANUTENÇÃO AERONÁUTICA (RBAC 145)",
     desc: "Consultoria para homologação e renovação de Organizações de Manutenção. Estruturação de SGQ, elaboração de manuais, procedimentos técnicos e adequação à Parte 145.",
     tag: "RBAC 145",
   },
   {
     icon: "🎓",
-    name: "OPERADORES PRIVADOS RBAC 91",
+    name: "OPERADORES PRIVADOS (RBAC 91)",
     desc: "CRIAR TEXTO",
     tag: "*****\n",
   },
   {
     icon: "📋",
-    name: "Auditorias",
+    name: "AUDITORIAS",
     desc: "Realização de auditorias de conformidade regulatória, identificando não conformidades e oportunidades de melhoria. Preparação para inspeções da ANAC.",
     tag: "Compliance",
   },
   {
     icon: "🛡️",
-    name: "Consultoria SGSO — Conformidade ANAC",
+    name: "CONSULTORIA SGSO",
     desc: "Implementação e fortalecimento do Sistema de Gerenciamento da Segurança Operacional. Cultura de segurança, relatórios de ocorrências e análise de risco conforme RBAC.",
     tag: "SGSO",
   },
   {
     icon: "📐",
-    name: "Treinamentos",
+    name: "TREINAMENTOS",
     desc: "criar texto",
     tag: "CAPACITAÇÃO",
   },
