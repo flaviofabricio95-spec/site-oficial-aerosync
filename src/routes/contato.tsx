@@ -16,9 +16,14 @@ export const Route = createFileRoute("/contato")({
   component: Contato,
 });
 
+const PHONES = [
+  { display: "+55 (11) 95951-2487", wa: "5511959512487" },
+  { display: "+55 (74) 99948-1092", wa: "5574999481092" },
+];
+
 const INFO = [
   { icon: "📧", label: "E-mail", value: "aerosync.consultoria@gmail.com" },
-  { icon: "📱", label: "WhatsApp / Telefone", value: "+55 (11) 95951-2487\n+55 (74) 99948-1092" },
+  { icon: "📱", label: "WhatsApp / Telefone", phones: PHONES },
   { icon: "📍", label: "Localização", value: "São Paulo – SP" },
   { icon: "🕐", label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
 ];
@@ -64,7 +69,23 @@ function Contato() {
                       {item.label}
                     </div>
                     <div className="text-sm font-medium whitespace-pre-line" style={{ color: "#3A4A5C" }}>
-                      {item.value}
+                      {item.phones ? (
+                        <div className="flex flex-col gap-1">
+                          {item.phones.map((p) => (
+                            <a
+                              key={p.wa}
+                              href={`https://wa.me/${p.wa}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-[#E8621A] transition-colors"
+                            >
+                              {p.display}
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        item.value
+                      )}
                     </div>
                   </div>
                 </div>
