@@ -46,7 +46,7 @@ export function Footer() {
           <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Serviços</h4>
           <ul className="flex flex-col gap-2.5 text-sm">
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Táxi Aéreo (RBAC 135)</Link></li>
-            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Manutenção (Parte 145)</Link></li>
+            <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Manutenção (RBAC 145)</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Instrução (RBAC 141)</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">SGSO</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Auditorias</Link></li>

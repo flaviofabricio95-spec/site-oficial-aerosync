@@ -98,7 +98,7 @@ function Contato() {
                 <select className={inputClass} defaultValue="">
                   <option value="">Selecione um serviço…</option>
                   <option>Certificação de Táxi Aéreo (RBAC 135)</option>
-                  <option>Oficina de Manutenção (Parte 145)</option>
+                  <option>Oficina de Manutenção (RBAC 145)</option>
                   <option>Centro de Instrução (RBAC 141)</option>
                   <option>Auditoria Interna / Externa</option>
                   <option>Consultoria SGSO</option>
