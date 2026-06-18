@@ -30,9 +30,9 @@ const SERVICES = [
   },
   {
     icon: "🎓",
-    name: "Centros de Instrução de Aviação Civil",
-    desc: "Apoio na certificação e operação de escolas de aviação conforme RBAC 141. Elaboração de programas de instrução, manuais operacionais e adequação curricular.",
-    tag: "RBAC 141",
+    name: "LOA*",
+    desc: "CRIAR TEXTO",
+    tag: "*****\n",
   },
   {
     icon: "📋",
