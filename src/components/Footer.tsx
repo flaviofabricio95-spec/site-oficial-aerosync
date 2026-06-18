@@ -11,7 +11,7 @@ const SOCIALS = [
 
 export function Footer() {
   return (
-    <footer style={{ background: "#142B48", color: "rgba(255,255,255,0.65)" }} className="px-[5%] pt-14 pb-8">
+    <footer style={{ background: "#FFFFFF", color: "#1E3A5F" }} className="px-[5%] pt-14 pb-8">
       <div className="max-w-[1200px] mx-auto grid gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
           <img src={logo.url} alt="AeroSync" className="h-20 mb-4" />
@@ -34,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Navegação</h4>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4">Navegação</h4>
           <ul className="flex flex-col gap-2.5 text-sm">
             <li><Link to="/" className="hover:text-[#F5A623] transition-colors">INÍCIO</Link></li>
             <li><Link to="/historia" className="hover:text-[#F5A623] transition-colors">HISTÓRIA</Link></li>
@@ -43,7 +43,7 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Serviços</h4>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4">Serviços</h4>
           <ul className="flex flex-col gap-2.5 text-sm">
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Táxi Aéreo (RBAC 135)</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">Manutenção (RBAC 145)</Link></li>
@@ -54,7 +54,7 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-4">Regulações</h4>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4">Regulações</h4>
           <ul className="flex flex-col gap-2.5 text-sm">
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 135</Link></li>
             <li><Link to="/servicos" className="hover:text-[#F5A623] transition-colors">RBAC 141*</Link></li>
@@ -64,7 +64,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto mt-12 pt-6 border-t border-white/10 flex flex-wrap justify-between items-center gap-3">
+      <div className="max-w-[1200px] mx-auto mt-12 pt-6 border-t border-[#1E3A5F]/15 flex flex-wrap justify-between items-center gap-3">
         <p className="text-xs">© 2026 AeroSync Consultoria Aeronáutica. Todos os direitos reservados.</p>
         <span className="text-xs font-semibold" style={{ color: "#F5A623" }}>🛡 Especialistas em Regulamentação ANAC</span>
       </div>
