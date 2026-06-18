@@ -51,7 +51,7 @@ function Home() {
               >
                 GESTÃO INTELIGENTE PARA
                 <br />
-                OPERAÇÕES MAIS SEGURAS
+                OPERAÇÕES <span style={{ color: "#E8621A" }}>MAIS SEGURAS</span>
               </h1>
 
               <div className="flex gap-3.5 justify-center flex-wrap">
