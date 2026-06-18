@@ -69,7 +69,23 @@ function Contato() {
                       {item.label}
                     </div>
                     <div className="text-sm font-medium whitespace-pre-line" style={{ color: "#3A4A5C" }}>
-                      {item.value}
+                      {item.phones ? (
+                        <div className="flex flex-col gap-1">
+                          {item.phones.map((p) => (
+                            <a
+                              key={p.wa}
+                              href={`https://wa.me/${p.wa}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-[#E8621A] transition-colors"
+                            >
+                              {p.display}
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        item.value
+                      )}
                     </div>
                   </div>
                 </div>
