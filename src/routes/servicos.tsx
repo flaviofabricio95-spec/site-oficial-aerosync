@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Plane, Wrench, PlaneTakeoff, ClipboardCheck, ShieldCheck, GraduationCap, type LucideIcon } from "lucide-react";
+import { Plane, Wrench, Helicopter, ClipboardCheck, ShieldCheck, GraduationCap, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/servicos")({
   head: () => ({
