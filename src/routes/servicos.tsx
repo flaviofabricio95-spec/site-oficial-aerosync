@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import airplaneIcon from "@/assets/airplane-orange.png.asset.json";
+import { Plane, Wrench, PlaneTakeoff, ClipboardCheck, ShieldCheck, GraduationCap, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/servicos")({
   head: () => ({
@@ -16,39 +16,39 @@ export const Route = createFileRoute("/servicos")({
   component: Servicos,
 });
 
-const SERVICES = [
+const SERVICES: { Icon: LucideIcon; name: string; desc: string; tag: string }[] = [
   {
-    icon: "plane",
+    Icon: Plane,
     name: "CERTIFICAÇÃO DE TÁXI AÉREO (RBAC 135)",
     desc: "Assessoria completa para obtenção e renovação do COA e Especificações de Operações. Elaboramos Manuais Operacionais, planos de treinamento e toda documentação exigida pela ANAC.",
     tag: "RBAC 135",
   },
   {
-    icon: "🔧",
+    Icon: Wrench,
     name: "OFICINAS DE MANUTENÇÃO AERONÁUTICA (RBAC 145)",
     desc: "Consultoria para homologação e renovação de Organizações de Manutenção. Estruturação de SGQ, elaboração de manuais, procedimentos técnicos e adequação à RBAC 145.",
     tag: "RBAC 145",
   },
   {
-    icon: "🎓",
+    Icon: PlaneTakeoff,
     name: "OPERADORES PRIVADOS / SAE\u00a0\n(RBAC 91)",
     desc: "Assessoria completa para gestão regulatória de aeronaves privadas, obtenção de LOA e Serviços Aéreos Especializados. Garantimos a conformidade com as normas da ANAC, auxiliando na estruturação de manuais, controle de documentação e processos de auditoria interna.",
-    tag: "*****\n",
+    tag: "RBAC 91",
   },
   {
-    icon: "📋",
+    Icon: ClipboardCheck,
     name: "AUDITORIAS",
     desc: "Realização de auditorias de conformidade regulatória, identificando não conformidades e oportunidades de melhoria. Preparação para inspeções da ANAC.",
     tag: "Compliance",
   },
   {
-    icon: "🛡️",
+    Icon: ShieldCheck,
     name: "CONSULTORIA SGSO",
     desc: "Implementação e fortalecimento do Sistema de Gerenciamento da Segurança Operacional. Cultura de segurança, relatórios de ocorrências e análise de risco conforme RBAC.",
     tag: "SGSO",
   },
   {
-    icon: "📐",
+    Icon: GraduationCap,
     name: "TREINAMENTOS",
     desc: "Programas de capacitação técnica e operacional personalizados para a sua equipe. Desenvolvemos treinamentos focados em segurança operacional e fatores humanos.",
     tag: "CAPACITAÇÃO",
@@ -89,14 +89,10 @@ function Servicos() {
                 style={{ background: "#F8F9FB", borderColor: "#D9E0EA" }}
               >
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5 transition-colors group-hover:bg-[rgba(232,98,26,0.1)]"
+                  className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 transition-colors group-hover:bg-[rgba(232,98,26,0.12)]"
                   style={{ background: "rgba(30,58,95,0.08)" }}
                 >
-                  {s.icon === "plane" ? (
-                    <img src={airplaneIcon.url} alt="" className="w-8 h-8 object-contain" />
-                  ) : (
-                    s.icon
-                  )}
+                  <s.Icon size={32} strokeWidth={1.75} color="#E8621A" />
                 </div>
                 <h3 className="text-base font-bold mb-3 leading-snug" style={{ color: "#1E3A5F" }}>
                   {s.name}
