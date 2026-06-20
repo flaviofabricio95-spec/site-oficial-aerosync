@@ -49,7 +49,7 @@ const SERVICES = [
   {
     icon: "📐",
     name: "TREINAMENTOS",
-    desc: "criar texto",
+    desc: "Programas de capacitação técnica e operacional personalizados para a sua equipe. Desenvolvemos treinamentos focados em segurança operacional e fatores humanos.",
     tag: "CAPACITAÇÃO",
   },
 ];
