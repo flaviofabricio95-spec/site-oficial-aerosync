@@ -30,7 +30,7 @@ const SERVICES: { Icon: LucideIcon; name: string; desc: string; tag: string }[] 
     tag: "RBAC 145",
   },
   {
-    Icon: PlaneTakeoff,
+    Icon: Helicopter,
     name: "OPERADORES PRIVADOS / SAE\u00a0\n(RBAC 91)",
     desc: "Assessoria completa para gestão regulatória de aeronaves privadas, obtenção de LOA e Serviços Aéreos Especializados. Garantimos a conformidade com as normas da ANAC, auxiliando na estruturação de manuais, controle de documentação e processos de auditoria interna.",
     tag: "RBAC 91",
