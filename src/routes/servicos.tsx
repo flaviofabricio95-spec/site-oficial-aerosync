@@ -92,7 +92,11 @@ function Servicos() {
                   className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5 transition-colors group-hover:bg-[rgba(232,98,26,0.1)]"
                   style={{ background: "rgba(30,58,95,0.08)" }}
                 >
-                  {s.icon}
+                  {s.icon === "plane" ? (
+                    <img src={airplaneIcon.url} alt="" className="w-8 h-8 object-contain" />
+                  ) : (
+                    s.icon
+                  )}
                 </div>
                 <h3 className="text-base font-bold mb-3 leading-snug" style={{ color: "#1E3A5F" }}>
                   {s.name}
