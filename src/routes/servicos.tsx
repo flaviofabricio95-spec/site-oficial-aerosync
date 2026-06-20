@@ -69,8 +69,8 @@ function Servicos() {
               O que fazemos
             </span>
             <h1
-              className="font-extrabold leading-tight mb-4 uppercase"
-              style={{ fontFamily: "'Playfair Display', serif", color: "#1E3A5F", fontSize: "clamp(2rem,4vw,2.8rem)" }}
+              className="font-normal leading-tight mb-4 uppercase"
+              style={{ fontFamily: "'Epilogue', sans-serif", color: "#1E3A5F", fontSize: "clamp(2rem,4vw,2.8rem)" }}
             >
               Soluções completas para sua{" "}
               <em className="not-italic" style={{ color: "#E8621A" }}>operação aérea</em>
