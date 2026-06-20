@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import airplaneIcon from "@/assets/airplane-orange.png.asset.json";
 
 export const Route = createFileRoute("/servicos")({
   head: () => ({
