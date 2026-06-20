@@ -18,7 +18,7 @@ export const Route = createFileRoute("/servicos")({
 
 const SERVICES = [
   {
-    icon: "✈️",
+    icon: "plane",
     name: "CERTIFICAÇÃO DE TÁXI AÉREO (RBAC 135)",
     desc: "Assessoria completa para obtenção e renovação do COA e Especificações de Operações. Elaboramos Manuais Operacionais, planos de treinamento e toda documentação exigida pela ANAC.",
     tag: "RBAC 135",
