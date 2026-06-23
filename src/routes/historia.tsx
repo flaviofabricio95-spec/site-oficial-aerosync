@@ -33,10 +33,10 @@ const TIMELINE = [
   },
 ];
 
-const VALUES = [
-  { icon: "🎯", title: "Precisão Técnica" },
-  { icon: "🔒", title: "Segurança" },
-  { icon: "🤝", title: "Parceria" },
+const VALUES: { Icon: LucideIcon; title: string }[] = [
+  { Icon: Target, title: "Precisão Técnica" },
+  { Icon: ShieldCheck, title: "Segurança" },
+  { Icon: HeartHandshake, title: "Parceria" },
 ];
 
 function Historia() {
