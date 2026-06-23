@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import logo from "@/assets/aerosync-logo-v2.png.asset.json";
-import { PlaneTakeoff, Telescope, ShieldCheck, Check } from "lucide-react";
+import { PlaneTakeoff, Telescope, ShieldCheck, Check, Target, HeartHandshake, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/historia")({
   head: () => ({
@@ -33,10 +33,10 @@ const TIMELINE = [
   },
 ];
 
-const VALUES = [
-  { icon: "🎯", title: "Precisão Técnica" },
-  { icon: "🔒", title: "Segurança" },
-  { icon: "🤝", title: "Parceria" },
+const VALUES: { Icon: LucideIcon; title: string }[] = [
+  { Icon: Target, title: "Precisão Técnica" },
+  { Icon: ShieldCheck, title: "Segurança" },
+  { Icon: HeartHandshake, title: "Parceria" },
 ];
 
 function Historia() {
@@ -113,10 +113,15 @@ function Historia() {
               {VALUES.map((v) => (
                 <div
                   key={v.title}
-                  className="bg-white rounded-2xl p-6 text-center border transition-all hover:-translate-y-1 hover:shadow-lg"
+                  className="group bg-white rounded-2xl p-6 text-center border transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{ borderColor: "#D9E0EA" }}
                 >
-                  <div className="text-3xl mb-2.5">{v.icon}</div>
+                  <div
+                    className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-3 transition-colors group-hover:bg-[rgba(232,98,26,0.12)]"
+                    style={{ background: "rgba(30,58,95,0.08)" }}
+                  >
+                    <v.Icon size={32} strokeWidth={1.75} color="#E8621A" />
+                  </div>
                   <div className="text-sm font-bold" style={{ color: "#1E3A5F" }}>
                     {v.title}
                   </div>
