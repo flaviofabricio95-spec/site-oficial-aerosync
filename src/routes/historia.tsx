@@ -113,10 +113,15 @@ function Historia() {
               {VALUES.map((v) => (
                 <div
                   key={v.title}
-                  className="bg-white rounded-2xl p-6 text-center border transition-all hover:-translate-y-1 hover:shadow-lg"
+                  className="group bg-white rounded-2xl p-6 text-center border transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{ borderColor: "#D9E0EA" }}
                 >
-                  <div className="text-3xl mb-2.5">{v.icon}</div>
+                  <div
+                    className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-3 transition-colors group-hover:bg-[rgba(232,98,26,0.12)]"
+                    style={{ background: "rgba(30,58,95,0.08)" }}
+                  >
+                    <v.Icon size={32} strokeWidth={1.75} color="#E8621A" />
+                  </div>
                   <div className="text-sm font-bold" style={{ color: "#1E3A5F" }}>
                     {v.title}
                   </div>
