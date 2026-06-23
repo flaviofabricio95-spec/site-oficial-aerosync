@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import logo from "@/assets/aerosync-logo-v2.png.asset.json";
+import { PlaneTakeoff, Telescope, ShieldCheck, Check } from "lucide-react";
 
 export const Route = createFileRoute("/historia")({
   head: () => ({
@@ -124,6 +125,63 @@ function Historia() {
             </div>
           </div>
         </div>
+
+
+        {/* Nossa Essência */}
+        <section className="mt-24 max-w-[1200px] mx-auto">
+          <h2
+            className="text-center font-bold mb-12"
+            style={{ fontFamily: "'DM Serif Display', serif", color: "#1E3A5F", fontSize: "clamp(1.8rem,3.5vw,2.4rem)" }}
+          >
+            Nossa Essência
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Missão */}
+            <div className="bg-white rounded-2xl p-8 border shadow-sm" style={{ borderColor: "#E5E9F0" }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: "rgba(30,58,95,0.08)" }}>
+                <PlaneTakeoff size={24} style={{ color: "#1E3A5F" }} />
+              </div>
+              <div className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#1E3A5F" }}>Missão</div>
+              <p className="text-sm leading-relaxed" style={{ color: "#4A5568" }}>
+                Elevar a performance da aviação brasileira por meio de consultoria especializada, conectando as melhores práticas internacionais à realidade operacional de cada cliente — com precisão, segurança e comprometimento.
+              </p>
+            </div>
+
+            {/* Visão */}
+            <div className="bg-white rounded-2xl p-8 border shadow-sm" style={{ borderColor: "#E5E9F0" }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: "rgba(232,98,26,0.10)" }}>
+                <Telescope size={24} style={{ color: "#E8621A" }} />
+              </div>
+              <div className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#1E3A5F" }}>Visão</div>
+              <p className="text-sm leading-relaxed" style={{ color: "#4A5568" }}>
+                Ser referência nacional em consultoria aeronáutica até 2030, reconhecida pela excelência técnica, inovação contínua e pelo impacto direto na eficiência e segurança do setor aéreo.
+              </p>
+            </div>
+
+            {/* Valores */}
+            <div className="bg-white rounded-2xl p-8 border shadow-sm" style={{ borderColor: "#E5E9F0" }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: "rgba(34,139,90,0.10)" }}>
+                <ShieldCheck size={24} style={{ color: "#228B5A" }} />
+              </div>
+              <div className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#1E3A5F" }}>Valores</div>
+              <ul className="space-y-2.5">
+                {[
+                  "Segurança em primeiro lugar",
+                  "Excelência técnica",
+                  "Integridade e transparência",
+                  "Inovação aplicada",
+                  "Parceria com o cliente",
+                  "Comprometimento com resultados",
+                ].map((v) => (
+                  <li key={v} className="flex items-start gap-2 text-sm leading-snug" style={{ color: "#4A5568" }}>
+                    <Check size={16} className="mt-0.5 flex-shrink-0" style={{ color: "#228B5A" }} />
+                    <span>{v}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
