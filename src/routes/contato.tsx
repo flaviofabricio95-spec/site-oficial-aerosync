@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 
 
@@ -27,8 +27,6 @@ const PHONES = [
 const INFO: { Icon: React.ElementType; label: string; value?: string; phones?: typeof PHONES }[] = [
   { Icon: Mail, label: "E-mail", value: "aerosync.consultoria@gmail.com" },
   { Icon: Phone, label: "WhatsApp / Telefone", phones: PHONES },
-  { Icon: MapPin, label: "Localização", value: "São Paulo – SP" },
-  { Icon: Clock, label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
 ];
 
 
