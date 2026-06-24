@@ -1,7 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { useState } from "react";
+import React, { useState } from "react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
+
+
 
 export const Route = createFileRoute("/contato")({
   head: () => ({
@@ -21,12 +24,13 @@ const PHONES = [
   { display: "+55 (74) 99948-1092", wa: "5574999481092" },
 ];
 
-const INFO = [
-  { icon: "📧", label: "E-mail", value: "aerosync.consultoria@gmail.com" },
-  { icon: "📱", label: "WhatsApp / Telefone", phones: PHONES },
-  { icon: "📍", label: "Localização", value: "São Paulo – SP" },
-  { icon: "🕐", label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
+const INFO: { Icon: React.ElementType; label: string; value?: string; phones?: typeof PHONES }[] = [
+  { Icon: Mail, label: "E-mail", value: "aerosync.consultoria@gmail.com" },
+  { Icon: Phone, label: "WhatsApp / Telefone", phones: PHONES },
+  { Icon: MapPin, label: "Localização", value: "São Paulo – SP" },
+  { Icon: Clock, label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
 ];
+
 
 function Contato() {
   const [sent, setSent] = useState(false);
@@ -59,11 +63,12 @@ function Contato() {
               {INFO.map((item) => (
                 <div key={item.label} className="flex gap-4 items-start mb-7">
                   <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 text-base"
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: "#1E3A5F" }}
                   >
-                    {item.icon}
+                    <item.Icon size={20} strokeWidth={1.75} color="#E8621A" />
                   </div>
+
                   <div>
                     <div className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#E8621A" }}>
                       {item.label}
