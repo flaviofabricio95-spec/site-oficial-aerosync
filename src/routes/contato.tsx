@@ -62,11 +62,12 @@ function Contato() {
               {INFO.map((item) => (
                 <div key={item.label} className="flex gap-4 items-start mb-7">
                   <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 text-base"
+                    className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: "#1E3A5F" }}
                   >
-                    {item.icon}
+                    <item.Icon size={20} strokeWidth={1.75} color="#E8621A" />
                   </div>
+
                   <div>
                     <div className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#E8621A" }}>
                       {item.label}
