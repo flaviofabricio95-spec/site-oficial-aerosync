@@ -108,7 +108,7 @@ function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Conversar no WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#E8621A] text-white shadow-lg transition-transform duration-300 hover:scale-110 animate-whatsapp-float"
+      className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform duration-300 hover:scale-110 animate-whatsapp-float"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -154,13 +154,13 @@
 
 @keyframes whatsapp-pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(232, 98, 26, 0.6);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
   }
   70% {
-    box-shadow: 0 0 0 18px rgba(232, 98, 26, 0);
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(232, 98, 26, 0);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
 
