@@ -6,7 +6,6 @@ const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/aerosync.consultoria/", Icon: Instagram },
   { label: "Facebook", href: "https://facebook.com/profile.php?id=61590848112188", Icon: Facebook },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/127144209", Icon: Linkedin },
-  { label: "WhatsApp", href: "https://wa.me/5500000000000", Icon: MessageCircle },
 ] as const;
 
 export function Footer() {
