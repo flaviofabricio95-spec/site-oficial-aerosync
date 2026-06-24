@@ -23,12 +23,13 @@ const PHONES = [
   { display: "+55 (74) 99948-1092", wa: "5574999481092" },
 ];
 
-const INFO = [
-  { icon: "📧", label: "E-mail", value: "aerosync.consultoria@gmail.com" },
-  { icon: "📱", label: "WhatsApp / Telefone", phones: PHONES },
-  { icon: "📍", label: "Localização", value: "São Paulo – SP" },
-  { icon: "🕐", label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
+const INFO: { Icon: React.ElementType; label: string; value?: string; phones?: typeof PHONES }[] = [
+  { Icon: Mail, label: "E-mail", value: "aerosync.consultoria@gmail.com" },
+  { Icon: Phone, label: "WhatsApp / Telefone", phones: PHONES },
+  { Icon: MapPin, label: "Localização", value: "São Paulo – SP" },
+  { Icon: Clock, label: "Horário de Atendimento", value: "Segunda a Sexta, 08h às 18h" },
 ];
+
 
 function Contato() {
   const [sent, setSent] = useState(false);
