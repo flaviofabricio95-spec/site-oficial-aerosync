@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "aerosync-mcp",
+      "version": "0.1.0",
+      "title": "AeroSync Consultoria MCP"
+    },
+    "tools": [
+      {
+        "name": "list_services",
+        "title": "List AeroSync services",
+        "description": "List all consulting services offered by AeroSync Consultoria, including RBAC certifications, audits and SMS.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_contact",
+        "title": "Get AeroSync contact info",
+        "description": "Return contact information for AeroSync Consultoria (WhatsApp, website).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
