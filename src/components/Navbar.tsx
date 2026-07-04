@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/aerosync-logo-v2.png.asset.json";
+
+const LOGO_URL = "https://i.imgur.com/FtUHZap.png";
 
 const NAV_ITEMS = [
   { label: "INÍCIO", to: "/" },
