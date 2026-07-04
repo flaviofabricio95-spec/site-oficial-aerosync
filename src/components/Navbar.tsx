@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/aerosync-logo-v2.png.asset.json";
+
+const LOGO_URL = "https://i.imgur.com/FtUHZap.png";
 
 const NAV_ITEMS = [
   { label: "INÍCIO", to: "/" },
@@ -34,7 +35,7 @@ export function Navbar({ variant = "solid" }: NavbarProps) {
       <nav className="max-w-7xl mx-auto w-full px-6 md:px-8 py-4">
         <div className="flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo.url} alt="AeroSync Consultoria" className="h-24 md:h-32 w-auto" />
+            <img src={LOGO_URL} alt="AeroSync Consultoria" className="h-24 md:h-32 w-auto" />
           </Link>
 
           <ul className="hidden md:flex items-center gap-1">
