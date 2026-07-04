@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Linkedin, MessageCircle } from "lucide-react";
-import logo from "@/assets/aerosync-logo-v2.png.asset.json";
+
+const LOGO_URL = "https://i.imgur.com/FtUHZap.png";
 
 const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/aerosync.consultoria/", Icon: Instagram },

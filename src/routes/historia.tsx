@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import logo from "@/assets/aerosync-logo-v2.png.asset.json";
+
+const LOGO_URL = "https://i.imgur.com/FtUHZap.png";
 import { PlaneTakeoff, Telescope, ShieldCheck, Check, Target, HeartHandshake, type LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/historia")({
