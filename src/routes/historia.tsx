@@ -58,7 +58,7 @@ function Historia() {
               className="absolute -bottom-16 -left-16 w-52 h-52 rounded-full blur-3xl"
               style={{ background: "rgba(30,58,95,0.10)" }}
             />
-            <img src={logo.url} alt="AeroSync" className="w-64 relative z-10" />
+            <img src={LOGO_URL} alt="AeroSync" className="w-64 relative z-10" />
             <p className="text-sm italic text-center mt-5 relative z-10 whitespace-pre-line font-semibold" style={{ color: "#1E3A5F" }}>
               "Voar com segurança começa{"\n"}com regulamentação de excelência."
             </p>

@@ -14,7 +14,7 @@ export function Footer() {
     <footer style={{ background: "#FFFFFF", color: "#1E3A5F" }} className="px-[5%] pt-14 pb-8">
       <div className="max-w-[1200px] mx-auto grid gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
-          <img src={logo.url} alt="AeroSync" className="h-20 mb-4" />
+          <img src={LOGO_URL} alt="AeroSync" className="h-20 mb-4" />
           <p className="text-sm leading-relaxed max-w-[260px]">
             Seu parceiro estratégico para certificações, auditorias e segurança operacional.
           </p>
