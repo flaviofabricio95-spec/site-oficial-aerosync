@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import React, { useState } from "react";
+import React from "react";
 import { Mail, Phone } from "lucide-react";
+
+
+
 
 
 
