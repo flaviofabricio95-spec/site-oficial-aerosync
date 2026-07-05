@@ -34,8 +34,6 @@ const INFO: { Icon: React.ElementType; label: string; value?: string; phones?: t
 
 
 function Contato() {
-  const [sent, setSent] = useState(false);
-
   return (
     <div className="min-h-screen flex flex-col" style={{ fontFamily: "'Inter', sans-serif", background: "#F8F9FB" }}>
       <Navbar />
