@@ -96,30 +96,28 @@ function Contato() {
             </div>
 
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSent(true);
-              }}
+              action="https://formspree.io/f/maqgvyjd"
+              method="POST"
               className="bg-white rounded-3xl p-10 shadow-[0_4px_32px_rgba(30,58,95,0.08)]"
             >
               <div className="grid sm:grid-cols-2 gap-4">
                 <Field label="Nome Completo *">
-                  <input required type="text" placeholder="Seu nome" className={inputClass} />
+                  <input required type="text" name="name" placeholder="Seu nome" className={inputClass} />
                 </Field>
                 <Field label="Empresa / Organização">
-                  <input type="text" placeholder="Nome da empresa" className={inputClass} />
+                  <input type="text" name="empresa" placeholder="Nome da empresa" className={inputClass} />
                 </Field>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 <Field label="E-mail *">
-                  <input required type="email" placeholder="seu@email.com" className={inputClass} />
+                  <input required type="email" name="email" placeholder="seu@email.com" className={inputClass} />
                 </Field>
                 <Field label="Telefone / WhatsApp">
-                  <input type="tel" placeholder="(00) 00000-0000" className={inputClass} />
+                  <input type="tel" name="telefone" placeholder="(00) 00000-0000" className={inputClass} />
                 </Field>
               </div>
               <Field label="Serviço de Interesse">
-                <select className={inputClass} defaultValue="">
+                <select className={inputClass} name="servico" defaultValue="">
                   <option value="">Selecione um serviço…</option>
                   <option>Certificação de Táxi Aéreo (RBAC 135)</option>
                   <option>Oficina de Manutenção (RBAC 145)</option>
@@ -136,6 +134,7 @@ function Contato() {
               <Field label="Mensagem">
                 <textarea
                   required
+                  name="message"
                   placeholder="Descreva sua necessidade ou situação atual. Quanto mais detalhe, melhor podemos ajudá-lo."
                   className={`${inputClass} min-h-[120px] resize-y`}
                 />
@@ -147,9 +146,6 @@ function Contato() {
               >
                 Enviar Mensagem ✈
               </button>
-              {sent && (
-                <p className="text-sm text-green-700 mt-4">Obrigado! Em breve entraremos em contato.</p>
-              )}
             </form>
           </div>
         </div>
