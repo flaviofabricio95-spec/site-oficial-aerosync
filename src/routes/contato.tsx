@@ -101,6 +101,7 @@ function Contato() {
               method="POST"
               className="bg-white rounded-3xl p-10 shadow-[0_4px_32px_rgba(30,58,95,0.08)]"
             >
+              <input type="hidden" name="_redirect" value="https://elite-launch-pad.lovable.app/contato" />
               <div className="grid sm:grid-cols-2 gap-4">
                 <Field label="Nome Completo *">
                   <input required type="text" name="name" placeholder="Seu nome" className={inputClass} />
