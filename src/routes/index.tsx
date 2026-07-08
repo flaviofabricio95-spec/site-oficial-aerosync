@@ -20,7 +20,7 @@ function Home() {
     <div className="min-h-screen flex flex-col bg-white" style={{ fontFamily: "'Inter', sans-serif" }}>
       <section className="relative h-screen overflow-hidden" style={{ background: "#f9fafb" }}>
           <video
-            className="absolute inset-0 w-full h-full object-cover object-center z-0"
+            className="absolute inset-0 w-full h-full object-contain md:object-cover object-center z-0"
             autoPlay
           muted
           loop
