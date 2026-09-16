@@ -23,8 +23,8 @@ export const Route = createFileRoute("/contato")({
 });
 
 const PHONES = [
-  { display: "+55 (11) 95951-2487", wa: "5511959512487" },
-  { display: "+55 (74) 99948-1092", wa: "5574999481092" },
+  { display: "+55 (11) 92742-2417", wa: "5511959512487" },
+  { display: "\n", wa: "5574999481092" },
 ];
 
 const INFO: { Icon: React.ElementType; label: string; value?: string; phones?: typeof PHONES }[] = [
