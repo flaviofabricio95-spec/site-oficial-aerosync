@@ -23,7 +23,7 @@ export const Route = createFileRoute("/contato")({
 });
 
 const PHONES = [
-  { display: "+55 (11) 92742-2417", wa: "5511959512487" },
+  { display: "+55 (11) 92742-2417", wa: "5511927422417" },
   { display: "\n", wa: "5574999481092" },
 ];
 

@@ -108,7 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/5511959512487"
+      href="https://wa.me/5511927422417"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Conversar no WhatsApp"
