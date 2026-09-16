@@ -28,7 +28,7 @@ const PHONES = [
 ];
 
 const INFO: { Icon: React.ElementType; label: string; value?: string; phones?: typeof PHONES }[] = [
-  { Icon: Mail, label: "E-mail", value: "aerosync.consultoria@gmail.com" },
+  { Icon: Mail, label: "E-mail", value: "comercial@aerosync.com.br" },
   { Icon: Phone, label: "WhatsApp / Telefone", phones: PHONES },
 ];
 
